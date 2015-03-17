@@ -1,0 +1,26 @@
+<div class="modal">
+
+    <ion-content id="gallery-grid" class="has-header" scrollbar-y="false">
+        <div class="item item-text-wrap no-border">
+            <div class="gallery-title" ng-if="showList">
+                    <span class="title-big" ng-bind-html="(list[0].gallery_title).split('|')[0]"></span>
+                    <span>|</span>
+                    <span class="title-small" ng-bind-html="(list[0].gallery_title).split('|')[1]"></span>
+
+            </div>
+            <div ng-bind-html="list[0].gallery_description"></div>
+        </div>
+
+        <div ng-if="showList">
+
+            <div class="container-column-3 padding">
+                <div class="col-block" ng-repeat="item in list">
+                    <div class="cover-image " style="background-image: url('{{item.thumb}}')" ng-click="{{action}}"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+
+</div>

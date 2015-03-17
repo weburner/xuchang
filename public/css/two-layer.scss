@@ -1,0 +1,17 @@
+.two-layer .list .item{
+    border: none;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.two-layer .list .item.item-layer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(80, 0, 149, 0.80);
+}
+.two-layer .list .item.item-layer h1, .two-layer .list .item.item-layer h2, .two-layer .list .item.item-layer h3, .two-layer .list .item.item-layer h4, .two-layer .list .item.item-layer h5, .two-layer .list .item.item-layer h6, .two-layer .list .item.item-layer p, .two-layer .list .item.item-layer button{
+    color: #ffffff !important;
+}

@@ -1,0 +1,17 @@
+.rl-layer .list {
+  padding-right: 140px !important;
+}
+.rl-layer .list .item{
+  min-height: 110px;
+  border-left:none;
+  border-right:none;
+}
+.rl-layer .cover-image {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 100%;
+  min-height: 100%  !important;
+  margin: 0;
+}

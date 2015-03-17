@@ -1,0 +1,119 @@
+/* cover image */
+.cover-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 300px;
+}
+.cover-image-contain{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 300px;
+}
+.cover-image-200-height{
+    min-height: 200px;
+}
+
+/* cover image in item */
+.item-cover-image-left, .item-cover-image-right{
+    min-height: 100px; /* default height */
+}
+.item-cover-image-left{
+    padding-left: 120px; /* item padding image width + 20px */
+}
+.item-cover-image-right{
+    padding-right: 120px; /* item padding image width + 20px */
+}
+.item-cover-image-left .cover-image, .item-cover-image-right .cover-image{
+    position: absolute;
+    background-position: center top;
+    min-width: 100px; /* default width */
+    height: 100%;
+    min-height: 100%;
+}
+.item-cover-image-left .cover-image{
+    left: 0;
+    top: 0;
+}
+.item-cover-image-right .cover-image{
+    right: 0;
+    top: 0;
+}
+.item-cover-image-left .cover-image.cover-image-align-bottom{
+    left: 0;
+    top: auto;
+    bottom: 0;
+}
+.item-cover-image-right .cover-image.cover-image-align-bottom{
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+.item-cover-image-left-140{
+    padding-left: 140px; /* item padding image width + 20px */
+}
+.item-cover-image-right-140{
+    padding-right: 140px; /* item padding image width + 20px */
+}
+/* cover image size */
+
+.cover-image-vertical-center{ /* only use if has cover image size */
+    top:50% !important;
+}
+
+.item-cover-image-left .cover-image-75-75, .item-cover-image-left .cover-image-60-60, .item-cover-image-left .cover-image-50-50  {
+    left:20px;
+}
+.item-cover-image-right .cover-image-75-75, .item-cover-image-right .cover-image-60-60, .item-cover-image-right .cover-image-50-50{
+    right:20px;
+}
+
+.cover-image-120{
+    min-width: 120px !important;
+    width: 120px !important;
+}
+
+.cover-image-50-50{
+    min-width: 50px !important;
+    min-height: 50px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.cover-image-60-60 {
+  min-width: 60px !important;
+  min-height: 60px !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.cover-image-75-75{
+    min-width: 75px !important;
+    min-height: 75px !important;
+    width: 75px !important;
+    height: 75px !important;
+}
+
+.cover-image-95-95{
+  min-width: 95px !important;
+  min-height: 95px !important;
+  width: 95px !important;
+  height: 95px !important;
+}
+
+.cover-image-50-50.cover-image-vertical-center{
+    margin-top: -25px !important;
+}
+
+.cover-image-60-60.cover-image-vertical-center {
+  margin-top: -33px !important;
+}
+
+.cover-image-75-75.cover-image-vertical-center{
+    margin-top: -37px !important;
+}
+
+.cover-image-round{
+  border-radius: 500px;
+}

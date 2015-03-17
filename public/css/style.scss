@@ -1,0 +1,527 @@
+.full-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#home .nav-buttons {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.full-page-contain .cover-image, .full-page-cover .cover-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-size: contain;
+}
+
+.full-page-contain .slider, .full-page-cover .slider {
+  height: 100%;
+}
+
+.full-page-cover .cover-image {
+  background-size: cover;
+}
+
+.three-col .cover-image {
+  min-height: 150px;
+  background-size: contain;
+}
+
+.three-col .list {
+  width: 33.333333%;
+  float: left;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+.two-col .cover-image {
+  min-height: 200px;
+  background-size: contain;
+}
+
+.two-col .list {
+  width: 50%;
+  float: left;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+.absolute-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.no-border {
+  border: none;
+}
+
+/* basic */
+.flex {
+  display: -webkit-box;
+  -webkit-box-align: center; /* 纵向居中 */
+}
+
+.flex-center {
+  -webkit-box-pack: center; /* 横向居中 */
+}
+
+body, .ionic-body {
+  font-family: Georgia, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, KaiTi, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 30px !important;
+}
+
+h2 {
+  font-size: 28px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+h4 {
+  font-size: 22px !important;
+}
+
+h5 {
+  font-size: 18px !important;
+}
+
+h6 {
+  font-size: 13px !important;
+}
+
+body, .ionic-body, h5, h6, p, span, blockquote {
+  color: #666666;
+}
+
+h1, h2, h3, h4 {
+  color: #333333;
+}
+
+/* columns grid */
+.container-column-3 {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  height: 100%;
+  width: 100%;
+}
+
+.container-column-2 {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.col-block {
+  width: 100%;
+  margin: 0 0 5px 0;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.col-block img {
+  width: 100%;
+  height: auto;
+}
+
+.col-block.has-title {
+  margin-bottom: 25px;
+}
+
+.container-column-3 h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* index */
+/*  make the navigation bar bottom   */
+.bar-header {
+  top: auto;
+  bottom: 0;
+  border-top: 1px solid #333333;
+  background-color: #000000;
+
+  border-bottom-color: transparent !important;
+  background-image: none;
+  border-bottom: none;
+}
+
+.has-header {
+  top: 0;
+  bottom: 44px;
+}
+
+.bar-header button img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.bar .title {
+  font-size: 20px !important;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.title span {
+  font-size: 12px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* menu */
+#main-menu {
+  background-color: #5b4660;
+  height: 100%;
+}
+
+#main-menu .list {
+  margin-bottom: 0;
+}
+
+.link-list .item {
+  background-color: transparent;
+  border: none;
+}
+
+.link-list .item {
+  padding: 13px 15px;
+}
+
+.link-list h5 {
+  display: block;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.link-list span {
+  font-size: 14px;
+  display: block;
+  margin-left: 5px;
+  font-family: KaiTi;
+  color: #ffffff;
+}
+
+.work-cat {
+  margin-left: 30px;
+  border-left: 1px solid #ffffff;
+}
+
+.work-cat span {
+  margin-left: 10px;
+}
+
+/* contain */
+/* like and info btn */
+.function-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.info-modal-button, .heart-modal-button {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+//.heart-modal-button {
+//  right: 45px;
+//}
+
+/* galley作品白边 */
+.gallery-contain.full-page-contain .cover-image, .gallery-contain.full-page-cover .cover-image {
+  left: 10px !important;
+  right: 10px !important;
+}
+
+/*  grid-gallery  */
+.modal {
+  background-color: #000000;
+}
+
+#gallery-grid .item {
+  background-color: #000000;
+}
+
+.gallery-title {
+  padding-right: 80px;
+  padding-bottom: 20px;
+}
+
+.gallery-title span {
+  color: #ffffff;
+}
+
+.title-big {
+  margin: 0 !important;
+  font-size: 28px !important;
+  font-style: italic;
+}
+
+.title-small {
+  font-family: KaiTi;
+}
+
+#gallery-grid .item-text-wrap span {
+  margin-left: 5px;
+}
+
+#gallery-grid .item-text-wrap p {
+  line-height: 21px;
+}
+
+/* image grid */
+#gallery-grid .cover-image {
+  min-height: 120px;
+}
+
+.col-block {
+  display: inline-block;
+}
+
+/* resume */
+#resume .list .item:last-child {
+  margin-bottom: 40px;
+}
+
+#resume .cover-image-95-95 {
+  margin: 30px auto 0;
+}
+
+#resume .list .item p {
+  overflow: visible;
+  white-space: normal;
+  line-height: 21px;
+}
+
+#resume .list .item:first-child, #basic-info {
+  text-align: center;
+}
+
+#resume .list .item h1 {
+  font-style: italic;
+}
+
+#resume .list .item h5 {
+  margin-left: 5px;
+}
+
+#education {
+  margin-top: 30px;
+}
+
+#resume .list .item h4 {
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+#article-list .item h4, #article-list .item h5, #article-list .item h6, #exhibition-list.item h4, #exhibition-list .item h5, #exhibition-list .item h6 {
+  margin-bottom: 10px;
+}
+
+/* list article */
+#article-list .list {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+/*  people thumb circle  */
+.has-border {
+  position: relative;
+}
+
+.has-border:before {
+  border: 1px solid #a2a2a2;
+  content: "";
+  width: 110%;
+  height: 110%;
+  display: block;
+  border-radius: 200px;
+  position: absolute;
+  top: -5%;
+  margin-left: -5%;
+}
+
+/* list exhibition */
+#exhibition-list .list {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+/* page simple & page exhibition */
+blockquote {
+  position: relative;
+  border-left: 0;
+  padding-top: 0;
+  padding-left: 38px;
+  font-size: 15px;
+}
+
+blockquote:before {
+  content: '“';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 70px;
+  top: 0;
+  left: 5px;
+  line-height: 50px;
+  color: #ededed;
+}
+
+#article .title {
+  margin-top: 10px;
+}
+
+#article .item h2 {
+  color: #ffffff;
+  width: 80%;
+}
+
+#article .item h5 {
+  color: #999999;
+  width: 90%;
+  line-height: 25px;
+}
+
+#article .list:first-child {
+  margin-bottom: 0;
+}
+
+#article .list .item {
+  background-color: #000000;
+}
+
+#article .item p {
+  color: #999999;
+}
+
+/* page exhibition */
+.exhibition-slide .cover-image {
+  min-height: 250px;
+}
+
+.slider-pager .slider-pager-page {
+  margin: 0 1px;
+  color: #ffffff;
+}
+
+.slider-pager-page {
+  font-size: 8px;
+}
+
+.page-exhibition-reference .flex {
+  margin-bottom: 20px;
+}
+
+.page-exhibition-reference span {
+  display: block;
+  margin-left: 5px;
+}
+
+.page-exhibition-reference h3 {
+  font-style: italic;
+}
+
+/* contact */
+#contact {
+  background-color: #000000;
+}
+
+#contact .info .item {
+  background-color: transparent;
+}
+
+#contact .item h5 {
+  font-size: 20px !important;
+  color: #ffffff !important;
+  font-style: italic;
+}
+
+#contact .item span {
+  font-size: 14px;
+  color: #999999 !important;
+}
+
+#contact .item .flex span {
+  margin-left: 5px;
+}
+
+#contact .list .item:last-child {
+  padding-bottom: 50px;
+}
+
+.contact-area {
+  margin-bottom: 15px;
+}
+
+#contact .contact-area .item {
+  margin: 0 15px 15px;
+  background-color: #f8f8f8 !important;
+}
+
+#location {
+  padding: 0;
+  min-width: 30px;
+  vertical-align: middle;
+  color: #674d85;
+}
+
+#location.button.icon:before, #location.button.icon-left:before, #location.button.icon-right:before {
+  font-size: 28px;
+}
+
+span.info-content {
+  white-space: normal;
+}
+
+.submit-btn button {
+  border: none;
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.padding.submit-btn {
+  padding-top: 0;
+}
+
+/* collection */
+#favorite {
+  background-color: #ededed;
+}
+
+#favorite .container-column-3 {
+  padding: 20px 15px;
+}
+
+.no-work .item {
+  background-color: transparent;
+  padding: 150px 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+

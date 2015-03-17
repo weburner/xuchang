@@ -1,0 +1,13 @@
+[
+    { "url":"#", "title":"Home | 首页"},
+    { "url":"#gallery/contain/2", "title":"Works | 作品"},
+    { "url":"#gallery/contain/2", "title":"Bygone | 逝"},
+    { "url":"#gallery/contain/4", "title":"My Tine Asteroids | 再见小山水"},
+    { "url":"#gallery/contain/1", "title":"Tinnitus | 耳鸣"},
+    { "url":"#gallery/contain/3", "title":"The Moss | 苔"},
+    { "url":"#resume", "title":"Resume | 简历"},
+    { "url":"#list/list-article/page-simple/1", "title":"Articles | 文章"},
+    { "url":"#list/list-exhibition/page-exhibition/2", "title":"Exhibitions | 展览"},
+    { "url":"#contact", "title":"Contact | 联络"},
+    { "url":"#collection", "title":"Favorite | 收藏"}
+]

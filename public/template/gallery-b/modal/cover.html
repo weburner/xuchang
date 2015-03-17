@@ -1,0 +1,13 @@
+<ion-view ng-init="closeModal();" ng-class="{blurcontent:isOpen}">
+    <ion-nav-buttons side="right">
+        <button class="button icon ion-grid button-clear" ng-click="closeInfoBox();closeModal();toggleGallery();">
+        </button>
+    </ion-nav-buttons>
+    <ion-content scroll="false">
+        <ng-include src="'list-ion-slide.html'" class="full-page-cover"></ng-include>
+        <button class="button icon ion-information-circled button-clear info-modal-button" ng-click="openInfoBox();pushItemInfo();"></button>
+        <button class="button icon ion-heart button-clear info-modal-button" ng-click="addToFavor();"></button>
+    </ion-content>
+
+</ion-view>
+

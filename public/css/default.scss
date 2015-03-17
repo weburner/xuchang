@@ -1,0 +1,227 @@
+
+// Base
+// -------------------------------
+
+$font-size-base:                  16px;
+$font-size-large:                 20px;
+$font-size-small:                 14px;
+
+$line-height-base:                1.5;
+
+$headings-font-weight:            300;
+$headings-line-height:            1.2;
+
+$base-color:                      #222;
+
+$content-padding:                 16px;
+
+$padding-base-vertical:           8px;
+$padding-base-horizontal:         16px;
+
+$padding-large-vertical:          12px;
+$padding-large-horizontal:        24px;
+
+$padding-small-vertical:          5px;
+$padding-small-horizontal:        10px;
+
+$z-index-bar:                     11;
+$modal-inset-mode-break-point:    9999px;  // @media min-width
+
+// Any variables you did not define will use the defaults
+@import "../lib/ionic/scss/ionic";
+
+/**
+ * Items
+ * --------------------------------------------------
+ */
+#article .item{
+  line-height: $line-height-base;
+
+  h1 {
+    margin: 0 0 4px 0;
+    font-size: 2.444444rem;
+  }
+
+  h2 {
+    margin: 0 0 4px 0;
+    font-size: 2.05556rem;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    font-size: 1.27778rem;
+  }
+  h5, h6 {
+    margin: 0 0 3px 0;
+    font-size: 1rem;
+  }
+  p {
+    color: #666;
+    font-size: $font-size-base;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  ul{
+    color: #666;
+    font-size: 16px;
+    margin-left: 20px;
+    list-style-type: disc !important;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.item {
+  line-height: 1.2857143;
+
+  h1 {
+    margin: 0 0 4px 0;
+    font-size: 23px;
+  }
+
+  h2 {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+  }
+  h5, h6, h5 span, h6 span {
+    margin: 0 0 3px 0;
+    font-size: 10px;
+  }
+  p {
+    color: #666;
+    font-size: 14px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+/**
+ * Cards and Inset Lists
+ * --------------------------------------------------
+ * A card and list-inset are close to the same thing, except a card as a box shadow.
+ */
+
+.card,
+.list-inset {
+  overflow: hidden;
+  margin: $content-padding ($content-padding / 2);
+  border-radius: $card-border-radius;
+  background-color: $card-body-bg;
+}
+
+// Description Lists
+// -------------------------
+
+dl {
+  font-weight: 300;
+}
+dt {
+  font-size: 1.27778rem;
+  font-weight: 300;
+}
+
+// Blockquotes
+// -------------------------
+
+blockquote {
+  padding-top: ($line-height-computed / 2);
+  padding-bottom: 0;
+  border-left: 1px solid #ddd;
+}
+
+// Summary
+// -------------------------
+.summary-2-line {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 18px;     /* fallback */
+  max-height: 36px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.summary-3-line {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 18px;     /* fallback */
+  max-height: 54px;      /* fallback */
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.full-page-contain .cover-image{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-size: cover;
+  min-height: 100%;
+}
+.full-page-contain .slider, .full-page-contain .list{
+  height: 100%;
+}
+.full-page-contain .item-layer{
+  min-height: 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.slide-in-down {
+  @include translate3d(0, -100%, 0);
+}
+.slide-in-down.ng-enter,
+.slide-in-down > .ng-enter {
+  @include transition(all $slide-in-up-function 400ms);
+}
+.slide-in-down.ng-enter-active,
+.slide-in-down > .ng-enter-active {
+  @include translate3d(0, 0, 0);
+}
+
+.slide-in-down.ng-leave,
+.slide-in-down > .ng-leave {
+  @include transition(all ease-in-out 250ms);
+}
+.modal-open .disable-user-behavior{
+  pointer-events: auto !important;
+}
+.modal .scroll:before{
+  //content: '';
+  //display: block;
+  //height: 44px;
+
+}
+
+.ng-enter .no-show-when-enter{
+  display:none;
+}
+
+@import "two-layer";
+@import "lr-layer";
+@import "rl-layer";
+@import "cover-image";

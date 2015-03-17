@@ -1,0 +1,8 @@
+[
+    { "url":"#gallery/contain/all/all", "title":"作品"},
+    { "url":"#page/page-simple/98", "title":"简历"},
+    { "url":"#list/list-article/page-simple/1", "title":"文章"},
+    { "url":"#list/list-exhibition/page-exhibition/2", "title":"展览"},
+    { "url":"#contact", "title":"联络"},
+    { "url":"#collection", "title":"收藏"}
+]
