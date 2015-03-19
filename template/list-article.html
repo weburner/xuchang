@@ -1,0 +1,18 @@
+<ion-view ng-init="closeModal()" ng-class="{blurcontent:isOpen}">
+    <ion-content id="article-list" scrollbar-y="false">
+        <div class="list" ng-repeat="item in list">
+            <a class="item item-text-wrap item-cover-image-right" href="#/page/{{subtemplate}}/{{item.nid}}">
+                <h6 ng-bind-html="item.reference_title"></h6>
+
+                <h4 ng-bind-html="item.title"></h4>
+
+                <h5 ng-bind-html="item.subtitle"></h5>
+
+                <div class="cover-image cover-image-60-60 cover-image-vertical-center cover-image-round has-border"
+                     style="background-image: url('{{item.reference_cover}}')">
+                </div>
+                <p class="summary-3-line" ng-bind-html="item.summary"></p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
