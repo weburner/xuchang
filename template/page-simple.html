@@ -1,0 +1,42 @@
+<ion-view ng-init="closeModal()" ng-class="{blurcontent:isOpen}">
+    <ion-content id="article" scrollbar-y="false">
+        <div swipeback>
+            <div class="list">
+
+                <div class="item cover-image" style="background-image: url('{{page.cover}}')" ng-if="page.cover"></div>
+                <div ng-if="!page.cover"></div>
+                <div class="item item-text-wrap item-layer no-border title">
+                    <h2 ng-bind-html="page.title"></h2>
+
+                    <h4 ng-bind-html="page.subtitle"></h4>
+                </div>
+            </div>
+            <div class="list article-body">
+                <div class="item item-text-wrap no-border">
+                    <blockquote ng-bind-html="page.summary" ng-if="page.summary"></blockquote>
+                    <div ng-bind-html="page.body"></div>
+                    <div class="padding"></div>
+                </div>
+            </div>
+
+            <div class="list reference page-simple-reference" ng-if="page.reference_title">
+                <div class="item item-text-wrap item-cover-image-right">
+                    <h4 ng-bind-html="page.reference_title"></h4>
+
+                    <div class="cover-image cover-image-60-60 cover-image-vertical-center cover-image-round has-border"
+                         style="background-image: url('{{page.reference_cover}}')">
+                    </div>
+                    <p ng-bind-html="page.reference_body"></p>
+                </div>
+            </div>
+
+
+            <div class="list list-inset">
+                <a href="{{page.linksurl[$index]}}" class="item" ng-repeat="title in page.linkstitle">
+                    {{title}}
+                </a>
+            </div>
+            <div class="padding"></div>
+        </div>
+    </ion-content>
+</ion-view>
