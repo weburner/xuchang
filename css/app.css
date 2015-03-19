@@ -7984,7 +7984,6 @@ blockquote:before {
   margin-top: 10px; }
 
 #article .item h2 {
-  color: #ffffff;
   width: 80%; }
 
 #article .item h5 {
@@ -7994,9 +7993,6 @@ blockquote:before {
 
 #article .list:first-child {
   margin-bottom: 0; }
-
-#article .list .item {
-  background-color: #000000; }
 
 #article .item p {
   color: #999999; }
