@@ -77,8 +77,8 @@ angular.module('Druponic.controllers')
             scope: $scope,
             animation: 'slide-in-up'
         }).then(function(modal) {
-                $scope.modal = modal;
-            });
+            $scope.modal = modal;
+        });
         $scope.openModal = function() {
 
             $scope.modal.show();
@@ -105,7 +105,7 @@ angular.module('Druponic.controllers')
 
 angular.module('Druponic.controllers')
     .controller('galleryCtrl', function($timeout, $scope, $stateParams, $http, $ionicSlideBoxDelegate, $ionicModal, lazyHttp, apiEndpoint, Favors) {
-        $scope.action = "openGallery();goToSlide($index)";
+        $scope.action = "closeGallery();goToSlide($index)";
         $scope.list = [];
         var serviceUrl = "";
 //        console.log($scope.page);
@@ -173,18 +173,17 @@ angular.module('Druponic.controllers')
 
         // gallery thumb modal
         $scope.isOpenGallery = false;
-        $scope.showList = true;
-        $ionicModal.fromTemplateUrl('template/gallery-b/modal/contain.html', {
+        $ionicModal.fromTemplateUrl('template/gallery/modal/grid-gallery.html', {
             scope: $scope,
             animation: 'slide-in-up'
         }).then(function(modal) {
-                $scope.galleryModal = modal;
-            });
+            $scope.galleryModal = modal;
+        });
         $scope.openGallery = function() {
             $scope.galleryModal.show();
             $scope.isOpenGallery = true;
             $timeout(function() {
-                $ionicSlideBoxDelegate.update();
+                $scope.showList = true;
             }, 100)
         };
 
@@ -204,12 +203,12 @@ angular.module('Druponic.controllers')
 
         // info box
         $scope.isOpenInfoBox = false;
-        $ionicModal.fromTemplateUrl('template/gallery-b/modal/photo-info-box.html', {
+        $ionicModal.fromTemplateUrl('template/gallery/modal/photo-info-box.html', {
             scope: $scope,
             animation: 'slide-in-up'
         }).then(function(modal) {
-                $scope.infoBox = modal;
-            });
+            $scope.infoBox = modal;
+        });
 
         $scope.openInfoBox = function() {
             $scope.infoBox.show();

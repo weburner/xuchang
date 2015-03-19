@@ -160,8 +160,7 @@ h1, h2, h3, h4 {
 .bar-header {
   top: auto;
   bottom: 0;
-  border-top: 1px solid #333333;
-  background-color: #000000;
+  border-top: 1px solid #dddddd;
 
   border-bottom-color: transparent !important;
   background-image: none;
@@ -182,18 +181,16 @@ h1, h2, h3, h4 {
 .bar .title {
   font-size: 20px !important;
   font-style: italic;
-  color: #ffffff;
 }
 
 .title span {
   font-size: 12px;
   font-style: normal;
-  color: #ffffff;
 }
 
 /* menu */
 #main-menu {
-  background-color: #5b4660;
+  background-color: #ededed;
   height: 100%;
 }
 
@@ -212,7 +209,7 @@ h1, h2, h3, h4 {
 
 .link-list h5 {
   display: block;
-  color: #ffffff;
+  color: #333333;
   font-style: italic;
 }
 
@@ -220,13 +217,11 @@ h1, h2, h3, h4 {
   font-size: 14px;
   display: block;
   margin-left: 5px;
-  font-family: KaiTi;
-  color: #ffffff;
 }
 
 .work-cat {
   margin-left: 30px;
-  border-left: 1px solid #ffffff;
+  border-left: 1px solid #333333;
 }
 
 .work-cat span {
@@ -257,31 +252,16 @@ h1, h2, h3, h4 {
 }
 
 /*  grid-gallery  */
-.modal {
-  background-color: #000000;
-}
-
-#gallery-grid .item {
-  background-color: #000000;
-}
 
 .gallery-title {
   padding-right: 80px;
   padding-bottom: 20px;
 }
 
-.gallery-title span {
-  color: #ffffff;
-}
-
 .title-big {
   margin: 0 !important;
   font-size: 28px !important;
   font-style: italic;
-}
-
-.title-small {
-  font-family: KaiTi;
 }
 
 #gallery-grid .item-text-wrap span {
@@ -307,7 +287,7 @@ h1, h2, h3, h4 {
 }
 
 #resume .cover-image-95-95 {
-  margin: 30px auto 0;
+  margin: 30px auto 6px;
 }
 
 #resume .list .item p {
@@ -448,7 +428,7 @@ blockquote:before {
 
 /* contact */
 #contact {
-  background-color: #000000;
+  background-color: #ededed;
 }
 
 #contact .info .item {
@@ -457,13 +437,12 @@ blockquote:before {
 
 #contact .item h5 {
   font-size: 20px !important;
-  color: #ffffff !important;
+  color: #333333 !important;
   font-style: italic;
 }
 
 #contact .item span {
   font-size: 14px;
-  color: #999999 !important;
 }
 
 #contact .item .flex span {
@@ -498,15 +477,7 @@ span.info-content {
   white-space: normal;
 }
 
-.submit-btn button {
-  border: none;
-  background-color: #666666;
-  color: #ffffff;
-}
 
-.padding.submit-btn {
-  padding-top: 0;
-}
 
 /* collection */
 #favorite {

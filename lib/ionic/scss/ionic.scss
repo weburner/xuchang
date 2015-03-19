@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
 @import
-  // Ionicons "ionicons/ionicons",
+  // Ionicons
+  "ionicons/ionicons",
 
-  // Variables "mixins", "variables",
+  // Variables
+  "mixins", "variables",
 
-  // Base "reset", "scaffolding", "type",
+  // Base
+  "reset", "scaffolding", "type",
 
-  // Components "action-sheet", "backdrop", "bar",
+  // Components
+  "action-sheet", "backdrop", "bar",
 "tabs",
 "menu",
 "modal",
@@ -19,13 +23,16 @@
 "slide-box",
 "split-pane",
 
-  // Forms "form", "checkbox", "toggle",
+  // Forms
+  "form", "checkbox", "toggle",
 "radio",
 "range",
 "select",
 "progress",
 
-  // Buttons "button", "button-bar",
+  // Buttons
+   "button", "button-bar",
 
-  // Util "animations", "grid", "util",
+  // Util
+  "animations", "grid", "util",
 "platform";

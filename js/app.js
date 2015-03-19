@@ -1,5 +1,5 @@
 angular.module('Druponic', ['ionic', 'Druponic.controllers', 'Druponic.services', 'Druponic.directives'])
-    .constant('apiEndpoint', 'http://mulan.servant.aegir.secenter.cn:1983/')
+    .constant('apiEndpoint', 'http://xuchang.wechat.secenter.cn//')
     .run(function ($ionicPlatform, apiEndpoint, $http, $ionicModal, $rootScope, $ionicViewService) {
     })
     .config(function ($stateProvider, $urlRouterProvider) {
@@ -29,14 +29,14 @@ angular.module('Druponic', ['ionic', 'Druponic.controllers', 'Druponic.services'
             .state('gallery', {
                 url: "/gallery/:template/:gallery",
                 templateUrl: function ($stateParams) {
-                    return 'template/gallery-b/' + $stateParams.template + '.html';
+                    return 'template/gallery/' + $stateParams.template + '.html';
                 },
                 controller: "galleryCtrl"
             })
             .state('gallery-category', {
                 url: "/gallery/:template/:gallery/:tid",
                 templateUrl: function ($stateParams) {
-                    return 'template/gallery-b/' + $stateParams.template + '.html';
+                    return 'template/gallery/' + $stateParams.template + '.html';
                 },
                 controller: "galleryCtrl"
             })
@@ -58,7 +58,7 @@ angular.module('Druponic', ['ionic', 'Druponic.controllers', 'Druponic.services'
                 templateUrl: "template/address.html"
             });
 
-        $urlRouterProvider.otherwise('/page/homepage/3');
+        $urlRouterProvider.otherwise('/page/homepage/1');
 
     })
     .controller('homepageCtrl', function ($scope, $http, $ionicSlideBoxDelegate) {
