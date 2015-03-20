@@ -7994,9 +7994,6 @@ blockquote:before {
 #article .list:first-child {
   margin-bottom: 0; }
 
-#article .item p {
-  color: #999999; }
-
 /* page exhibition */
 .exhibition-slide .cover-image {
   min-height: 250px; }
