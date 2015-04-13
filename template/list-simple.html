@@ -1,0 +1,14 @@
+<ion-view ng-init="closeModal()" ng-class="{blurcontent:isOpen}">
+    <ion-content id="article-list" scrollbar-y="false">
+        <div class="list" ng-repeat="item in list">
+            <a class="item item-text-wrap" href="#/page/{{subtemplate}}/{{item.nid}}">
+
+                <h4 ng-bind-html="item.title"></h4>
+
+                <h5 ng-bind-html="item.subtitle"></h5>
+
+                <p class="summary-3-line" ng-bind-html="item.summary"></p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

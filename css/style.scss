@@ -308,10 +308,6 @@ h1, h2, h3, h4 {
   margin-left: 5px;
 }
 
-#education {
-  margin-top: 30px;
-}
-
 #resume .list .item h4 {
   font-style: italic;
   margin-bottom: 12px;
@@ -320,6 +316,12 @@ h1, h2, h3, h4 {
 #article-list .item h4, #article-list .item h5, #article-list .item h6, #exhibition-list.item h4, #exhibition-list .item h5, #exhibition-list .item h6 {
   margin-bottom: 10px;
 }
+
+.item.artist-pic {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 
 /* list article */
 #article-list .list {
@@ -389,7 +391,6 @@ blockquote:before {
 #article .list:first-child {
   margin-bottom: 0;
 }
-
 
 /* page exhibition */
 .exhibition-slide .cover-image {
@@ -468,8 +469,6 @@ blockquote:before {
 span.info-content {
   white-space: normal;
 }
-
-
 
 /* collection */
 #favorite {

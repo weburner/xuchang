@@ -7925,15 +7925,16 @@ h1, h2, h3, h4 {
 #resume .list .item h5 {
   margin-left: 5px; }
 
-#education {
-  margin-top: 30px; }
-
 #resume .list .item h4 {
   font-style: italic;
   margin-bottom: 12px; }
 
 #article-list .item h4, #article-list .item h5, #article-list .item h6, #exhibition-list.item h4, #exhibition-list .item h5, #exhibition-list .item h6 {
   margin-bottom: 10px; }
+
+.item.artist-pic {
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 /* list article */
 #article-list .list {
